@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Generator with History</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="logo" href="#">QuoteSpace</a>
+    <a href="#favorites">My Favorites</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">A LITTLE INSPIRATION, EVERY DAY</p>
+      <h1>Words that move you.</h1>
+      <p class="subtitle">Discover a quote. Keep the ones that matter.</p>
+
+      <article class="quote-card">
+        <span class="quote-mark">“</span>
+        <p id="quote">Loading your quote...</p>
+        <p id="author" class="author"></p>
+
+        <div class="actions">
+          <button id="newQuoteBtn" class="primary">New Quote ↻</button>
+          <button id="favoriteBtn">♡ Save Favorite</button>
+          <button id="copyBtn">▢ Copy</button>
+        </div>
+
+        <p id="message" role="status" aria-live="polite"></p>
+      </article>
+    </section>
+
+    <section id="favorites" class="favorites-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR PERSONAL COLLECTION</p>
+          <h2>Favorite Quotes</h2>
+        </div>
+        <span id="favoriteCount">0 saved</span>
+      </div>
+
+      <div id="favoritesList" class="favorites-list"></div>
+    </section>
+  </main>
+
+  <footer>Made for moments of inspiration.</footer>
+</body>
+</html>
